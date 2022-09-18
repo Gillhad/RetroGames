@@ -18,4 +18,8 @@ public class MenuMainManager : MonoBehaviour
     public void LoadArkarnoid() {
         SceneManager.LoadScene("Arkanoid");
     }
+
+    public void LoadmINE() {
+        SceneManager.LoadScene("MineSweeper");
+    }
 }

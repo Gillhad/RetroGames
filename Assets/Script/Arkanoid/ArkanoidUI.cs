@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ArkanoidUI : MonoBehaviour
 {
@@ -36,6 +37,10 @@ public class ArkanoidUI : MonoBehaviour
         }
         gameTime += Time.deltaTime;
         durationText.text = gameTime.ToString("N2");
+
+        if(Input.GetKeyDown("escape")){
+            SceneManager.LoadScene("Menu");
+        }
     }
 
 }
